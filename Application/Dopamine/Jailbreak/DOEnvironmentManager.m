@@ -268,13 +268,13 @@ extern char **environ;
 - (BOOL)isInstalledThroughTrollStore
 {
 	return NO;
-    (* static BOOL trollstoreInstallation = NO;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSString* trollStoreMarkerPath = [[[NSBundle mainBundle].bundlePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"_TrollStore"];
-        trollstoreInstallation = [[NSFileManager defaultManager] fileExistsAtPath:trollStoreMarkerPath];
-    });
-    return trollstoreInstallation; *)
+    // static BOOL trollstoreInstallation = NO;
+    // static dispatch_once_t onceToken;
+    // dispatch_once(&onceToken, ^{
+    //     NSString* trollStoreMarkerPath = [[[NSBundle mainBundle].bundlePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"_TrollStore"];
+    //     trollstoreInstallation = [[NSFileManager defaultManager] fileExistsAtPath:trollStoreMarkerPath];
+    // });
+    // return trollstoreInstallation;
 }
 
 - (void)updateJailbreakState
